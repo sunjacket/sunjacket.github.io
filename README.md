@@ -1,4 +1,4 @@
 sunjacket.github.io
 ===================
 
-Official website for Sunjacket, indie rock back from Chicago
+Official website for Sunjacket, an indie rock band from Chicago, IL.
