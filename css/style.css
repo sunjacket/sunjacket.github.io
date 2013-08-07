@@ -1,0 +1,177 @@
+/* Reset
+--------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 700;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  line-height: 0;
+}
+/* Structure
+--------------------------------------------------*/
+
+.limiter {
+  max-width: 479px;
+  margin: 0 auto;
+  padding: 37px 0 45px;
+}
+
+/* Styles
+--------------------------------------------------*/
+
+body {
+  font-size: 18px;
+  padding: 12px;
+  font-family: "ff-meta-serif-web-pro", serif;
+  background-color: #66ffb5;
+  color: #3A3B38;
+}
+h1 {
+  font-size: 3.333em;
+  text-transform: uppercase;
+  color: white;
+  font-family: "franklin-gothic-ext-comp-urw", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.4em;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 1.22em;
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-weight: 700;
+  color: #003366;
+  margin: 2.04em 0 0.4em 0;
+}
+ul {
+  margin-bottom: 1.22em;
+}
+li {
+  line-height: 1.44
+}
+nav a:hover {
+  color: #fff;
+}
+p.intro {
+  font-size: 1.44em;
+  line-height: 1.44;
+  color: #003366;
+}
+p {
+  font-size: 1em;
+  line-height: 1.44;
+  margin-bottom: 1.22em;
+}
+dl {
+  line-height: 1.44;
+  margin-bottom: 1.22em;
+}
+dt {
+  font-weight: 700;
+}
+dd.presenter {
+  font-style: italic;
+}
+a {
+  color: #003366;
+  text-decoration: underline;
+}
+a:hover {
+  color: #fff;
+}
+/* Transitions */
+a, a:hover, input.button, input.button:hover {
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  -ms-transition: all 250ms ease-in;
+  -o-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+input {
+  border: none;
+  padding: 8px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-size: 1em;
+}
+#mc_embed_signup {
+  margin-bottom: 20px;
+}
+input.button {
+  font-weight: 700;
+  background-color: #003366;
+  color: #FFF;
+}
+input.button:hover {
+  background-color: #FFF;
+  color: #003366;
+  cursor: pointer;
+}
+
+iframe {
+  margin-top: 13px;
+}
+.song {
+  padding: 13px 13px 13px 0;
+  margin-bottom: 22px;
+  border-bottom: 1px dotted #003366;
+}
+.song a {
+  color: #3A3B38;
+  text-decoration: none;
+}
+/* Tools
+--------------------------------------------------*/
+
+/* Clearfix */
+.group:before, .group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+/* Hide */
+.hide {
+  display: none;
+}
