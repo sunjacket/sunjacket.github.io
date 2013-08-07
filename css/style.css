@@ -113,7 +113,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #fff;
+  color: #3A3B38;
 }
 /* Transitions */
 a, a:hover, input.button, input.button:hover {
@@ -144,17 +144,13 @@ input.button:hover {
   color: #003366;
   cursor: pointer;
 }
-
 iframe {
   margin-top: 13px;
 }
-.song {
-  padding: 13px 13px 13px 0;
-  margin-bottom: 22px;
-  border-bottom: 1px dotted #003366;
+ul.networks {
+  margin-left: 1.542857em;
 }
-.song a {
-  color: #3A3B38;
+.networks a i {
   text-decoration: none;
 }
 /* Tools
