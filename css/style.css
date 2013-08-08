@@ -101,7 +101,12 @@ dl {
 dt {
   font-weight: 700;
 }
-dd.presenter {
+dd.location {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+dd.bands {
   font-style: italic;
 }
 /* Links */
