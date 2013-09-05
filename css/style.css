@@ -61,6 +61,10 @@ body {
   padding: 12px;
   font-family: "ff-meta-serif-web-pro", serif;
   background-color: #66ffb5;
+  background-image: url("/assets/sunjacket-spring.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #3A3B38;
 }
 /* Typography */
