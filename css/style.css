@@ -143,8 +143,7 @@ input.button {
   color: #FFF;
 }
 input.button:hover {
-  background-color: #FFF;
-  color: #003366;
+  background-color: #3A3B38;
   cursor: pointer;
 }
 /* Font Awesome Cleanups */
@@ -153,6 +152,21 @@ ul.networks {
 }
 .networks a i {
   text-decoration: none;
+}
+
+/* Responsive
+--------------------------------------------------*/
+
+@media screen and (max-width: 400px) {
+  input.email {
+    padding: 3%;
+    width: 94%;
+    margin-bottom: 12px;
+  }
+  input.button {
+    width: 100%;
+    padding: 3%;
+  }
 }
 
 /* Tools
