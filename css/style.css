@@ -154,11 +154,22 @@ h1.section-title {
 /* Top Banner */
 
 #banner {
+  position: relative;
+}
+.onejacket {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.twojacket {
+  height: 100%;
   width: 100%;
   display: table;
   vertical-align: middle;
 }
-#banner div {
+.threejacket {
   display: table-cell;
   vertical-align: middle;
 }

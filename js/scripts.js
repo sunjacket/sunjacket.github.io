@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var windowHeight = $( window ).height();
+  var windowHeight = $(window).height();
 
   $( ".full" ).css("min-height", windowHeight);
 
