@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   var windowHeight = $(window).height();
 
-  $( ".full" ).css("min-height", windowHeight);
+  $( ".full" ).css("height", windowHeight);
 
   $( ".show").click(function() {
     $(this).toggleClass("active");

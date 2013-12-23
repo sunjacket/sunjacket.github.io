@@ -233,16 +233,6 @@ h1.section-title {
   left: 0;
   z-index: 1000;
 }
-.show-links div {
-  width: 100%;
-  height: 100%;
-  display: table;
-  vertical-align: middle;
-}
-.show-links div ul {
-  display: table-cell;
-  vertical-align: middle;
-}
 .show-links li {
   margin-bottom: 1.25em;
 }
@@ -375,6 +365,18 @@ font-size: 1.5em;
 
 /* Tools
 --------------------------------------------------*/
+
+/* Clearfix */
+.vertical-wrap {
+  width: 100%;
+  height: 100%;
+  display: table;
+  vertical-align: middle;
+}
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
 
 /* Clearfix */
 .group:before, .group:after {
