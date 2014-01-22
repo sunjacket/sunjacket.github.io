@@ -189,7 +189,7 @@ h1.section-title {
 
 /* Shows */
 
-.show {
+.show, .message {
   position: relative;
   padding: 4.5em 1.5em 4.75em;
   border: 2px solid #000;
