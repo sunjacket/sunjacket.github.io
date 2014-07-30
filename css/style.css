@@ -1,6 +1,18 @@
 /* Structure
 --------------------------------------------------*/
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.page {
+  height: 100%;
+  width: 100%;
+}
+.full {
+  height: 100%;
+  width: 100%;
+}
 .limiter {
   max-width: 650px;
   margin: 0 auto;
@@ -23,7 +35,6 @@
 }
 body {
   color: #000;
-  border: 8px solid #000;
   border-top: none;
   text-align: center;
   font-family: Oriya MN, Helvetica, Arial, sans-serif;
@@ -118,8 +129,6 @@ h1.section-title {
   right: 0;
   z-index: 2000;
   padding: 0 1em;
-  border: 8px solid #000;
-  border-bottom: none;
   background-color: #FFF;
 }
 #menu a {
