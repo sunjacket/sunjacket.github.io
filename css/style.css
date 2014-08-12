@@ -149,14 +149,17 @@ h1.section-title {
 /* Networks */
 
 #networks {
+  width: 100%;
   font-size: 1.5em;
+  position: absolute;
+  bottom: 0;
 }
-#networks nav a {
+#networks a {
   display: inline-block;
   padding: 1em 0.75em;
   border-bottom: none;
 }
-#networks nav a:hover {
+#networks a:hover {
   color: #777;
 }
 
@@ -449,6 +452,9 @@ img {
   }
   #sunjacket {
     font-size: 2.75em;
+  }
+  #sunjacket.vertical-center {
+    display: block;
   }
   #sunjacket span {
     display: inline;
