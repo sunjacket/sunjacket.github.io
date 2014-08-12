@@ -124,7 +124,7 @@ h1.section-title {
 
 #menu {
   position: fixed;
-  top: 0;
+  top: 6px;
   left: 0;
   right: 0;
   z-index: 2000;
@@ -152,7 +152,7 @@ h1.section-title {
   width: 100%;
   font-size: 1.5em;
   position: absolute;
-  bottom: 0;
+  bottom: 6px;
 }
 #networks a {
   display: inline-block;
@@ -375,6 +375,36 @@ font-size: 1.5em;
   border-radius: 50%;
 }
 
+/* Border Bars
+--------------------------------------------------*/
+
+.bar {
+  position: fixed;
+  background-color: #000;
+  z-index: 9999;
+}
+.bar.top, .bar.bottom {
+  height: 6px;
+  width: 100%;
+}
+.bar.right, .bar.left {
+  width: 6px;
+  top: 0;
+  bottom: 0;
+}
+.bar.top {
+  top: 0;
+}
+.bar.right {
+  right: 0;
+}
+.bar.bottom {
+  bottom: 0;
+}
+.bar.left {
+  left: 0;
+}
+
 /* Tools
 --------------------------------------------------*/
 
@@ -473,6 +503,9 @@ img {
   }
   label, .contact-subject {
     font-size: 1.5em;
+  }
+  .bar {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
