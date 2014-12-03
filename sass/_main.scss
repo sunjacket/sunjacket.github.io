@@ -1,0 +1,178 @@
+$purple: rgb(144,19,255);
+$tan: rgba(245,240,230,0.98);
+$pad-column: 16px;
+$pad-section: 6em;
+
+$small: "screen and (max-width: 769px)";
+$small-pad-section: 2em;
+
+* {
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+body {
+  color: $purple;
+  font-family: 'Playfair Display', serif;
+  @media #{$small} {
+    font-size: 85%;
+  }
+}
+a {
+  color: $purple;
+  text-decoration: none;
+  @include transition(color 200ms ease-out);
+  &:hover {
+    color: shade($purple, 30%);
+  }
+}
+.page {
+  @media #{$small} {
+    padding: 0;
+  }
+  @include animation(fadein 3s);
+}
+@include keyframes(fadein) {
+  from {
+    @include opacity(0);
+  }
+  to {
+    @include opacity(1);
+  }
+}
+.border {
+  padding: 2em;
+  border: 10px solid $purple;
+  background-color: $tan;
+  @media #{$small} {
+    border: 4px solid $purple;
+  }
+}
+.main {
+  max-width: 760px;
+  margin: $pad-section auto;
+  @media #{$small} {
+    margin: $small-pad-section auto;
+  }
+}
+.top {
+  margin-bottom: $pad-section;
+  @media #{$small} {
+    margin-bottom: $small-pad-section;
+  }
+}
+.welcome {
+  font-size: 2.375em;
+  line-height: 1.42;
+  @media #{$small} {
+    font-size: 1.375em;
+  }
+}
+.soundcloud {
+  padding-top: $pad-section / 2;
+  padding-bottom: $pad-section / 2;
+}
+.email {
+  padding-bottom: $pad-section / 2;
+  a {
+    font-size: 1.75em;
+  }
+}
+.links {
+  ul {
+    font-size: 1.125em;
+    line-height: 1.7;
+  }
+}
+.row {
+  margin-right: -$pad-column;
+  margin-left: -$pad-column;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  padding-right: $pad-column;
+  padding-left: $pad-column;
+  @media #{$small} {
+    float: none;
+  }
+}
+.half {
+  width: 50%;
+}
+.third {
+  width: 33.333333%;
+}
+@media #{$small} {
+  .half, .third {
+    width: 100%;
+  }
+}
+input[type="email"] {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 0.25;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+  color: $purple;
+  margin-bottom: 1em;
+  &:focus {
+    outline: 0;
+    border-bottom: 2px solid $purple;
+  }
+}
+input[type="submit"] {
+  padding: 0.5em;
+  border: 2px solid $purple;
+  background-color: transparent;
+  color: $purple;
+  font-style: italic;
+  font-size: 0.75em;
+  &:focus {
+    outline: 0;
+    border: 2px solid $purple;
+  }
+}
+.signed {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 0.75em;
+  @media #{$small} {
+    background-color: $tan;
+    margin: 0;
+    padding-bottom: 3em;
+  }
+}
+.hide {
+  display: none;
+}
+.background {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/sunjacket-away.jpg");
+  background-size: cover;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+img {
+  width: 100%;
+  height: auto;
+}

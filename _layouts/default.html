@@ -1,103 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ site.name }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="It's the official website for Sunjacket, the five-piece band from Chicago.">
-
-    <!-- Icons -->
-    <link rel="shortcut icon" href="/assets/sunjacket-icon.jpg">
-    <link rel="apple-touch-icon" href="/assets/sunjacket-icon.jpg">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-
-  </head>
+{% include head.html %}
   <body>
 
-    <header>
-      <nav id="menu">
-        <a href="#shows">Shows</a>
-        <a href="#music">Music</a>
-        <a href="#updates">Updates</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <div class="page">
+    <div class="border">
 
-    <div class="page">
+        <section class="main">
 
-      <section id="banner" class="full">
-        <div class="vertical-wrap">
-              <h1 id="sunjacket" class="vertical-center"><a href="#shows">Sunjacket</a></h1>
-        </div>
-        <nav id="networks">
-          <a href="https://www.facebook.com/sunjacket"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/sunjacket"><i class="fa fa-twitter"></i></a>
-          <a href="http://instagram.com/sunjacket"><i class="fa fa-instagram"></i></a>
-          <a href="https://soundcloud.com/sunjacketsounds"><i class="fa fa-soundcloud"></i></a>
-        </nav>
-      </section>
+        {% include header.html %}
 
-      {{ content }}
+        {{ content }}
 
-      <footer id="contact" class="full">
-        <div class="limiter padding">
+        {% include footer.html %}
 
-          <h1 class="section-title">Contact</h1>
+        </section>
 
-          <h2 class="contact-subject">Booking</h2>
-          <address class="booking">
-          <a href="mailto:booking@sunjacket.net">booking@sunjacket.net</a>
-          </address>
-
-          <h2 class="contact-subject">General</h2>
-          <address class="general">
-          <a href="mailto:hello@sunjacket.net">hello@sunjacket.net</a>
-          </address>
-
-        </div>
-
-      </footer>
+    <div class="signed">
+      <span>Signed, November, MMXIV</span>
+    </div>
 
     </div>
 
-    <div id="bg">
-      <div id="bg-img" class="hide">
-        <img src="/images/sunjacket-sky.jpg">
-      </div>
-    </div>
 
-    <div class="bar top"></div>
-    <div class="bar right"></div>
-    <div class="bar bottom"></div>
-    <div class="bar left"></div>
+  </div>
 
-      <!-- Google Analytics -->
+  <div class="background"></div>
 
-      <script type="text/javascript">
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-8701302-7']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-      </script>
-
-      <!-- JQuery -->
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-      <!-- Scripts -->
-
-      <script type="text/javascript" src="js/scripts.js"></script>
+  {% include scripts.html %}
 
   </body>
 </html>
