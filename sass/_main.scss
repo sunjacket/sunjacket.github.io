@@ -1,5 +1,5 @@
-$purple: rgb(144,19,255);
-$tan: rgba(245,240,230,0.98);
+$purple: rgb(92,30,121);
+$tan: rgb(170,176,191);
 $pad-column: 16px;
 $pad-section: 6em;
 
@@ -12,10 +12,12 @@ $small-pad-section: 2em;
 }
 body {
   color: $purple;
-  font-family: 'Playfair Display', serif;
+  font-family: 'bagnardregular';
   @media #{$small} {
     font-size: 85%;
   }
+  font-weight: bold;
+  text-align: center;
 }
 a {
   color: $purple;
@@ -29,7 +31,7 @@ a {
   @media #{$small} {
     padding: 0;
   }
-  @include animation(fadein 3s);
+  @include animation(fadein 1s);
 }
 @include keyframes(fadein) {
   from {
@@ -40,31 +42,51 @@ a {
   }
 }
 .border {
-  padding: 2em;
-  border: 10px solid $purple;
-  background-color: $tan;
+  padding: 5.5%;
+  border: 12px solid $purple;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   @media #{$small} {
-    border: 4px solid $purple;
-  }
-}
-.main {
-  max-width: 760px;
-  margin: $pad-section auto;
-  @media #{$small} {
-    margin: $small-pad-section auto;
+    border: 6px solid $purple;
   }
 }
 .top {
+  margin-top: $pad-section;
+  margin-bottom: $pad-section;
+  @media #{$small} {
+    margin-top: $small-pad-section;
+    margin-bottom: $small-pad-section;
+  }
+}
+.hello, .shows, .music, .video {
   margin-bottom: $pad-section;
   @media #{$small} {
     margin-bottom: $small-pad-section;
   }
 }
-.welcome {
-  text-align: center;
+.shows {
+  background-color: $purple;
+  color: $tan;
+  padding: 6em 2em;
 }
-.welcome, .music, .video {
-  padding-bottom: $pad-section / 4;
+.show {
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+.show p {
+  margin: 0;
+}
+.show:after {
+  font-size: 1.75em;
+  position: absolute;
+  bottom: -0.45em;
+  left: 50%;
+  content: "\2014";
+}
+.show:last-of-type:after {
+  content: "";
 }
 .youtube {
   position: relative;
@@ -79,7 +101,6 @@ a {
     height: 100%;
   }
 }
-
 .email {
   padding-bottom: $pad-section / 2;
   a {
@@ -88,7 +109,7 @@ a {
 }
 .links {
   ul {
-    font-size: 1.125em;
+    font-size: 1.5em;
     line-height: 1.7;
   }
 }
@@ -122,6 +143,7 @@ a {
 }
 input[type="email"] {
   width: 100%;
+  text-align: center;
   padding: 0;
   padding-bottom: 0.25;
   border: 0;
@@ -145,6 +167,9 @@ input[type="submit"] {
     outline: 0;
     border: 2px solid $purple;
   }
+  @media #{$small} {
+    margin-bottom: 4em;
+  }
 }
 .signed {
   text-align: center;
@@ -152,7 +177,6 @@ input[type="submit"] {
   margin-bottom: 0;
   font-size: 0.75em;
   @media #{$small} {
-    background-color: $tan;
     margin: 0;
     padding-bottom: 3em;
   }
@@ -160,28 +184,32 @@ input[type="submit"] {
 .hide {
   display: none;
 }
-.background {
-  position: fixed;
-  width: 100%;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  right: 0;
-  background-image: url("../images/sunjacket-away.jpg");
-  background-size: cover;
-}
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+h1 {
+  font-size: 6em;
+  text-align: center;
+  @media #{$small} {
+    font-size: 4em;
+  }
+}
+h2 {
+  font-size: 4em;
+  @media #{$small} {
+    font-size: 3em;
+  }
+}
 h3 {
-  font-size: 0.75em;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
+  font-size: 1em;
 }
 img {
   width: 100%;
   height: auto;
+}
+p {
+  font-size: 1.75em;
+  line-height: 1.3;
 }
