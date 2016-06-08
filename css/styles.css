@@ -561,15 +561,16 @@ a:hover {
   position: absolute;
   bottom: -0.45em;
   left: 50%;
+  margin-left: -0.5em;
   content: "\2014";
 }
 
-/* line 93, ../sass/_main.scss */
+/* line 94, ../sass/_main.scss */
 .show:last-of-type:after {
   content: "";
 }
 
-/* line 96, ../sass/_main.scss */
+/* line 97, ../sass/_main.scss */
 .youtube {
   position: relative;
   padding-bottom: 56.25%;
@@ -577,7 +578,7 @@ a:hover {
   padding-top: 25px;
   height: 0;
 }
-/* line 101, ../sass/_main.scss */
+/* line 102, ../sass/_main.scss */
 .youtube iframe {
   position: absolute;
   top: 0;
@@ -586,64 +587,64 @@ a:hover {
   height: 100%;
 }
 
-/* line 109, ../sass/_main.scss */
+/* line 110, ../sass/_main.scss */
 .email {
   padding-bottom: 3em;
 }
-/* line 111, ../sass/_main.scss */
+/* line 112, ../sass/_main.scss */
 .email a {
   font-size: 1.75em;
 }
 
-/* line 116, ../sass/_main.scss */
+/* line 117, ../sass/_main.scss */
 .links ul {
   font-size: 1.5em;
   line-height: 1.7;
 }
 
-/* line 121, ../sass/_main.scss */
+/* line 122, ../sass/_main.scss */
 .row {
   margin-right: -16px;
   margin-left: -16px;
 }
 
-/* line 125, ../sass/_main.scss */
+/* line 126, ../sass/_main.scss */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 130, ../sass/_main.scss */
+/* line 131, ../sass/_main.scss */
 .column {
   float: left;
   padding-right: 16px;
   padding-left: 16px;
 }
 @media screen and (max-width: 769px) {
-  /* line 130, ../sass/_main.scss */
+  /* line 131, ../sass/_main.scss */
   .column {
     float: none;
   }
 }
 
-/* line 138, ../sass/_main.scss */
+/* line 139, ../sass/_main.scss */
 .half {
   width: 50%;
 }
 
-/* line 141, ../sass/_main.scss */
+/* line 142, ../sass/_main.scss */
 .third {
   width: 33.333333%;
 }
 
 @media screen and (max-width: 769px) {
-  /* line 145, ../sass/_main.scss */
+  /* line 146, ../sass/_main.scss */
   .half, .third {
     width: 100%;
   }
 }
-/* line 149, ../sass/_main.scss */
+/* line 150, ../sass/_main.scss */
 input[type="email"] {
   width: 100%;
   text-align: center;
@@ -655,13 +656,13 @@ input[type="email"] {
   color: #5c1e79;
   margin-bottom: 1em;
 }
-/* line 159, ../sass/_main.scss */
+/* line 160, ../sass/_main.scss */
 input[type="email"]:focus {
   outline: 0;
   border-bottom: 2px solid #5c1e79;
 }
 
-/* line 164, ../sass/_main.scss */
+/* line 165, ../sass/_main.scss */
 input[type="submit"] {
   padding: 0.5em;
   border: 2px solid #5c1e79;
@@ -670,19 +671,19 @@ input[type="submit"] {
   font-style: italic;
   font-size: 0.75em;
 }
-/* line 171, ../sass/_main.scss */
+/* line 172, ../sass/_main.scss */
 input[type="submit"]:focus {
   outline: 0;
   border: 2px solid #5c1e79;
 }
 @media screen and (max-width: 769px) {
-  /* line 164, ../sass/_main.scss */
+  /* line 165, ../sass/_main.scss */
   input[type="submit"] {
     margin-bottom: 4em;
   }
 }
 
-/* line 179, ../sass/_main.scss */
+/* line 180, ../sass/_main.scss */
 .signed {
   text-align: center;
   margin-top: 2rem;
@@ -690,60 +691,60 @@ input[type="submit"]:focus {
   font-size: 0.75em;
 }
 @media screen and (max-width: 769px) {
-  /* line 179, ../sass/_main.scss */
+  /* line 180, ../sass/_main.scss */
   .signed {
     margin: 0;
     padding-bottom: 3em;
   }
 }
 
-/* line 189, ../sass/_main.scss */
+/* line 190, ../sass/_main.scss */
 .hide {
   display: none;
 }
 
-/* line 192, ../sass/_main.scss */
+/* line 193, ../sass/_main.scss */
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 197, ../sass/_main.scss */
+/* line 198, ../sass/_main.scss */
 h1 {
   font-size: 6em;
   text-align: center;
 }
 @media screen and (max-width: 769px) {
-  /* line 197, ../sass/_main.scss */
+  /* line 198, ../sass/_main.scss */
   h1 {
     font-size: 4em;
   }
 }
 
-/* line 204, ../sass/_main.scss */
+/* line 205, ../sass/_main.scss */
 h2 {
   font-size: 4em;
 }
 @media screen and (max-width: 769px) {
-  /* line 204, ../sass/_main.scss */
+  /* line 205, ../sass/_main.scss */
   h2 {
     font-size: 3em;
   }
 }
 
-/* line 210, ../sass/_main.scss */
+/* line 211, ../sass/_main.scss */
 h3 {
   font-size: 1em;
 }
 
-/* line 213, ../sass/_main.scss */
+/* line 214, ../sass/_main.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 217, ../sass/_main.scss */
+/* line 218, ../sass/_main.scss */
 p {
   font-size: 1.75em;
   line-height: 1.3;
