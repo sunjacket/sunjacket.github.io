@@ -69,6 +69,11 @@ a {
   background-color: $purple;
   color: $tan;
   padding: 6em 2em;
+  a {
+    color: $tan;
+    text-decoration: underline;
+    font-size: inherit;
+  }
 }
 .show {
   position: relative;
