@@ -45,10 +45,12 @@ a {
   padding: 5.5%;
   border: 12px solid $purple;
   background-image: url("../images/bg.jpg");
-  background-size: cover;
+  @include background-size(cover);
   background-attachment: fixed;
   @media #{$small} {
-    border: 6px solid $purple;
+    background: transparent;
+    background-color: #b1bcc2;
+    border: none;
   }
 }
 .limit {
