@@ -90,7 +90,6 @@ GEM
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
     mini_portile2 (2.1.0)
-    minima (1.0.1)
     minitest (5.9.0)
     multipart-post (2.0.0)
     net-dns (0.8.0)
@@ -123,7 +122,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-github-metadata (~> 1.0)
-  minima
 
 RUBY VERSION
    ruby 2.3.1p112
