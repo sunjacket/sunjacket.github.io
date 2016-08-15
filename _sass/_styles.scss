@@ -1,0 +1,9 @@
+$font-family-global: 'PxGroteskRegular', Verdana, sans-serif;
+$font-family-icons: 'PxGroteskScreen';
+
+body {
+  font-family: $font-family-global;
+}
+.icon {
+  font-family: $font-family-icon;
+}
