@@ -1,0 +1,63 @@
+$font-family-global: 'PxGroteskLight', Verdana, sans-serif;
+$font-family-icons: 'PxGroteskScreen';
+
+body {
+  font-family: $font-family-global;
+  font-size: 18px;
+  line-height: 1.277777;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+em {
+  font-style: italic;
+}
+
+.icon {
+  font-family: $font-family-icons;
+}
+
+/* Titles */
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 72px;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  @media #{$phone} {
+    font-size: 36px;
+  }
+}
+
+.pre-order-options {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.pre-order-category {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.item-title {
+  font-size: 36px;
+}
+
+/* Paragraphs */
+
+.intro {
+  font-size: 48px;
+  line-height: 1.25;
+}
+.disclaimer {
+  font-size: 24px;
+  line-height: 1.25;
+}
+.song-feature {
+  font-size: 24px;
+  line-height: 1.25;
+}
+.bio {
+  font-size: 36px;
+  line-height: 1.25;
+}

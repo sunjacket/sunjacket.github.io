@@ -1,9 +1,20 @@
-$font-family-global: 'PxGroteskRegular', Verdana, sans-serif;
-$font-family-icons: 'PxGroteskScreen';
+/* Colors */
 
-body {
-  font-family: $font-family-global;
+ $plum: rgb(120,107,111);
+ $coal: rgb(45,45,50);
+$white: rgb(255,255,255);
+
+.paper {
+  color: $plum;
+  background-color: $white;
+  a {
+    color: $plum;
+  }
 }
-.icon {
-  font-family: $font-family-icon;
+.invert {
+  color: $white;
+  background-color: $plum;
+  a {
+    color: $white;
+  }
 }

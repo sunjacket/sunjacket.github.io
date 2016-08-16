@@ -1,0 +1,23 @@
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container-image {
+  line-height: 0;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
