@@ -4,17 +4,266 @@
  $coal: rgb(45,45,50);
 $white: rgb(255,255,255);
 
+/* Color Schemes */
+
 .paper {
   color: $plum;
   background-color: $white;
-  a {
-    color: $plum;
-  }
 }
 .invert {
   color: $white;
   background-color: $plum;
+}
+
+/* Global Styles */
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container-image {
+  line-height: 0;
+}
+
+/* Header */
+
+.header-links-desktop {
+  a {
+    display: inline-block;
+    color: $plum;
+    transition: color 125ms ease-in-out;
+    &:hover {
+      color: darken($plum,20%);
+    }
+  }
+}
+.sticky {
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  z-index: 1000;
+}
+.logo-box {
+  position: absolute;
+  @extend .sticky;
+}
+.logo {
+  float: left;
+  font-size: 18px;
+  text-transform: uppercase;
+  @extend .header-links-desktop;
+}
+.nav-box {
+  position: fixed;
+  @extend .sticky;
+}
+.nav-desktop {
+  float: right;
+  font-size: 16px;
+  @extend .header-links-desktop;
+  .nav-desktop-list {
+    li {
+      float: left;
+      padding-right: 18px;
+      padding-left: 18px;
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+
+/* Section Styles */
+
+/* .welcome */
+
+.welcome {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/sunjacket-cover.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: $coal;
+}
+.welcome-banner {
+  text-align: center;
+}
+.welcome-message {
+  @extend .intro;
+  color: white;
+}
+.welcome-arrow {
+  display: block;
+  cursor: hover;
+  padding: 16px;
+  position: absolute;
+  bottom: 72px;
+  animation-name: bounce;
+  animation-duration: 500ms;
+  animation-delay: 2s;
+  animation-iteration-count: 4;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-fill-mode: initial;
+  &:hover {
+    fill: $white;
+  }
+}
+@keyframes bounce {
+  from { transform: translateY(0%); }
+  to { transform: translateY(-50%); }
+}
+
+/* .pre-order */
+
+.promotion {
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+.pre-order {
+  @extend .paper;
+  a {
+    color: $plum;
+  }
+}
+.pre-order-images {
+  position: relative;
+  padding-top: 2.5em;
+  padding-bottom: 3.75em;
+  line-height: 0;
+  z-index: 2000;
+}
+
+/* .content */
+
+.content {
+  padding-top: 58px;
+  padding-bottom: 58px;
+  @extend .invert;
   a {
     color: $white;
+    background-position: 0 1.25em;
+    background-size: 0.111111em 0.111111em;
+    background-image: linear-gradient(transparent 50%, lighten($plum,40%) 50%);
+    background-repeat: repeat-x;
+    &:hover {
+      background-image: linear-gradient(transparent 50%, transparent 50%);
+    }
+  }
+}
+
+/* .music */
+
+.song {
+  padding-bottom: 1.4em;
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.show {
+  font-size: 48px;
+  line-height: 1.10416667;
+  text-transform: uppercase;
+  padding-bottom: 1.1em;
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+  .show-bands {
+    font-size: 24px;
+    text-transform: none;
+    margin-top: 0.6em;
+  }
+}
+.show-details {
+  padding-bottom: 0.25em;
+}
+
+/* .portrait */
+
+.portrait {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Lists */
+
+.pre-order-item-list {
+  padding-bottom: 0.7em;
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+.item-description-list {
+  text-indent: -1em;
+  padding-bottom: 1.3em;
+  li {
+    padding-left: 1em;
+    margin-bottom: 0.45em;
+    &:before {
+      content:"\2013";
+      padding-right: 0.25em;
+    }
+  }
+}
+
+/* Buttons */
+
+.btn {
+  background-image: none !important;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  line-height: 1em;
+  display: inline-block;
+  cursor: pointer;
+  padding: 17px 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1px;
+  transition: all 125ms ease-in-out;
+  &.btn-welcome {
+    color: $plum;
+    border-color: $white;
+    background-color: $white;
+    &:hover {
+      color: $white;
+      border-color: $coal;
+      background-color: $coal;
+    }
+  }
+  &.btn-pre-order {
+    color: $white;
+    border-color: $plum;
+    background-color: $plum;
+    &:hover {
+      color: $plum;
+      border-color: $plum;
+      background-color: $white;
+    }
+  }
+  &.btn-buy-tickets,
+  &.btn-rsvp  {
+    color: $white;
+    border-color: lighten($plum,40%);
+    background-color: $plum;
+    &:hover {
+      color: $plum;
+      border-color: $white;
+      background-color: $white;
+    }
+  }
+  &.btn-rsvp {
+    margin-left: 1.25em;
   }
 }
