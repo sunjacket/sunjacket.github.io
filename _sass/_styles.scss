@@ -294,7 +294,6 @@ a.menu-link {
 input[type="email"] {
   font-size: 16px;
   color: $white;
-  font-family: $font-family;
   padding: 1.125em;
   width: 100%;
   border: none;
@@ -304,6 +303,10 @@ input[type="email"] {
   margin-top: 1em;
   margin-bottom: 1.125em;
   outline: none;
+}
+input[type="submit"],
+input[type="email"] {
+  font-family: $font-family;
 }
 ::-webkit-input-placeholder {
    color: $white;
