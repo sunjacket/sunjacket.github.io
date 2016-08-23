@@ -1,0 +1,103 @@
+$font-family: 'PxGroteskRegular', Verdana, sans-serif;
+
+body {
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 1.277777;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  text-rendering: geometricPrecision;
+  @media #{$phone} {
+    font-size: 16px;
+  }
+}
+em {
+  font-style: italic;
+}
+
+/* Titles */
+
+.menu-title {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  @media #{$phone} {
+    margin-bottom: 0.5em;
+  }
+}
+.section-title {
+  font-size: 72px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 0.7em;
+  @media #{$phone} {
+    font-size: 36px;
+  }
+}
+.pre-order-options {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-bottom: 0.85em;
+  @media #{$phone} {
+    font-size: 24px;
+  }
+}
+.pre-order-category {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 1.55em;
+  margin-bottom: 1.55em;
+  @media #{$phone} {
+    font-size: 14px;
+  }
+}
+.item-title {
+  font-size: 36px;
+  margin-bottom: 0.6em;
+  line-height: 1.1;
+  @media #{$phone} {
+    font-size: 24px;
+  }
+}
+.song-feature {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 0.8em;
+  @media #{$phone} {
+    font-size: 18px;
+  }
+}
+
+/* Paragraphs */
+
+.intro {
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 0.7em;
+  @media #{$phone} {
+    font-size: 24px;
+  }
+}
+.disclaimer {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 1em;
+  @media #{$phone} {
+    font-size: 12px;
+  }
+}
+.pre-order-includes {
+  margin-bottom: 0.45em;
+}
+.bio {
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+  @media #{$phone} {
+    font-size: 18px;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
