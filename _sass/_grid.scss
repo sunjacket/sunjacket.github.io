@@ -1,34 +1,36 @@
-/* Settings */
+/* Grid Settings ---------------------- */
 
 $content-width: 1440px;
 $row-padding: 5%; /* 1440 / 72 */
 $row-padding-phone: 6.4%; /* 375 / 24 */
 $gutter: 30px;
 
-/* Media Queries */
+/* Viewport Sizes --------------------- */
 
 $tablet: "screen and (max-width: 880px)";
 $phone: "screen and (max-width: 480px)";
 
-/* Grid */
+/* Column Grid ------------------------ */
 
 * {
   box-sizing: border-box;
 }
-.container,
-.container-flush {
-  padding-top: 42px;
-  padding-bottom: 42px;
-}
+
+/* containers */
+
 .container {
   max-width: $content-width;
   margin: 0 auto;
   padding-right: $row-padding;
   padding-left: $row-padding;
   @media #{$phone} {
-    padding: 0 $row-padding-phone;
+    padding-right: $row-padding-phone;
+    padding-left: $row-padding-phone;
   }
 }
+
+/* rows */
+
 .row {
   margin-right: -$gutter / 2;
   margin-left: -$gutter / 2;
@@ -38,6 +40,9 @@ $phone: "screen and (max-width: 480px)";
     clear: both;
   }
 }
+
+/* columns */
+
 .col {
   float: left;
   padding-left: $gutter / 2;
@@ -59,10 +64,4 @@ $phone: "screen and (max-width: 480px)";
     width: 100%;
     clear: both;
   }
-}
-
-/* Sizing */
-
-.full-height {
-  min-height: 100vh;
 }
