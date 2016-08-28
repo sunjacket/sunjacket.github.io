@@ -1,32 +1,6 @@
 ---
 layout: default
 ---
-<header id="header" class="header">
-  <h1 class="logo"><a href="">Sunjacket</a></h1>
-  <nav class="nav nav-desktop">
-    <ul class="nav-desktop-list">
-      <li><a href="https://sunjacket.bandcamp.com/album/mantra">Pre-Order</a></li>
-      <li><a href="#music">Music</a></li>
-      <li><a href="#shows">Shows</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a class="follow-link" href="#">Follow</a></li>
-      <li><a class="contact-link" href="#">Contact</a></li>
-    </ul>
-  </nav>
-
-  <nav class="nav nav-mobile menu">
-    <ul class="nav-mobile-list">
-      <li><a href="https://sunjacket.bandcamp.com/album/mantra">Pre-Order</a></li>
-      <li><a class="page-link" href="#music">Music</a></li>
-      <li><a class="page-link" href="#shows">Shows</a></li>
-      <li><a class="page-link" href="#about">About</a></li>
-      <li><a class="follow-link" href="#">Follow</a></li>
-      <li><a class="contact-link" href="#">Contact</a></li>
-    </ul>
-    <a class="close-x" href="#">{% include icon-close.html %}</a>
-  </nav>
-  <a class="menu-link" href="#">{% include icon-menu.html %}</a>
-</header>
 
 <section id="welcome" class="welcome container full-height">
   <div class="welcome-banner">
@@ -35,13 +9,12 @@ layout: default
   </div>
   <a class="welcome-arrow" href="#pre-order">{% include icon-down-arrow.html %}</a>
 </section>
-
+<!-- pre-order promotional aside -->
 <aside id="promotion" class="promotion">
   <section id="pre-order" class="pre-order container">
     <h2 class="section-title">Pre-Order</h2>
     <p class="intro">Sunjacket’s debut LP <em>Mantra</em> is now available for pre-order in limited edition 180g vinyl*, compact disc, and digital formats. T-shirt bundles are available with each format.</p>
     <p class="disclaimer"><small>*Due to manufacturing times, limited edition 180g vinyl and limited edition 180g vinyl + t-shirt bundles are estimated to ship during late October – early November 2016. You will receive a code for digital download on or before September 16, 2016.</small></p>
-
     <div class="pre-order-images">
       <ul class="slider">
         <li><img src="images/sunjacket-slide-01-vinyl-jacket-front.jpg" width="1600" height="1067" alt="Sunjacket"></li>
@@ -141,7 +114,7 @@ layout: default
     </ul>
   </section>
 </aside>
-
+<!-- main content -->
 <main id="content" class="content">
   <!-- music -->
   <section id="music" class="container">
@@ -193,67 +166,3 @@ layout: default
   </section>
   <!-- /about -->
 </main>
-
-<footer id="copyright" class="copyright">
-  <div class="container">
-    <p><small>&copy; 2016 Sunjacket. All rights reserved.</small></p>
-  </div>
-</footer>
-
-<nav id="follow" class="follow menu">
-  <div class="container container-menu">
-    <h2 class="section-title">Follow</h2>
-    <div class="row">
-      <div class="social col col-3">
-        <h3 class="menu-title">Social</h3>
-        <ul>
-          <li><a href="https://www.facebook.com/sunjacket">Facebook</a></li>
-          <li><a href="https://twitter.com/sunjacket">Twitter</a></li>
-          <li><a href="https://www.instagram.com/sunjacket/">Instagram</a></li>
-          <li><a href="https://www.snapchat.com/add/sunjacket">Snapchat</a></li>
-        </ul>
-      </div>
-      <div class="stream col col-3">
-        <h3 class="menu-title">Stream</h3>
-        <ul>
-          <li><a href="https://open.spotify.com/artist/2CQE8XkRQetXDnoz0nZdRB">Spotify</a></li>
-          <li><a href="https://itun.es/us/JWa13">Apple Music</a></li>
-          <li><a href="https://sunjacket.bandcamp.com/">Bandcamp</a></li>
-          <li><a href="https://soundcloud.com/sunjacketsounds">SoundCloud</a></li>
-        </ul>
-      </div>
-      <div class="updates col col-3">
-        <h3 class="menu-title">Updates</h3>
-        <form action="//sunjacket.us6.list-manage.com/subscribe/post?u=7b867c5fdf30c0550afdc8fe4&amp;id=8b86a56d6d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <input type="email" placeholder="you@whatever.com" name="EMAIL" class="required email" id="mce-EMAIL">
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7b867c5fdf30c0550afdc8fe4_8b86a56d6d" tabindex="-1" value=""></div>
-          <div class="clear"><input class="btn btn-submit" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </form>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-      </div>
-    </div>
-    <a class="close-x" href="#">{% include icon-close.html %}</a>
-  </div>
-</nav>
-
-<nav id="contact" class="contact menu">
-  <div class="container container-menu">
-    <h2 class="section-title">Contact</h2>
-    <div class="row">
-      <div class="contact-general col col-3">
-        <h3 class="menu-title">General</h3>
-        <p><a href="mailto:hello@sunjacket.net">hello@sunjacket.net</a></p>
-      </div>
-      <div class="contact-booking col col-3">
-        <h3 class="menu-title">Booking</h3>
-        <p><a href="mailto:joe@greenbelttouring.com">joe@greenbelttouring.com</a></p>
-      </div>
-      <div class="contact-licensing col col-3">
-        <h3 class="menu-title">Licensing</h3>
-        <p><a href="mailto:chris@ghost-town.com">chris@ghost-town.com</a></p>
-        <p><a href="mailto:hannah@ghost-town.com">hannah@ghost-town.com</a></p>
-      </div>
-    </div>
-    <a class="close-x" href="#">{% include icon-close.html %}</a>
-  </div>
-</nav>
