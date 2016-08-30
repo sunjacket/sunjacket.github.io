@@ -343,12 +343,14 @@ a.close-x {
 /* .welcome */
 
 .welcome {
-  @extend %flex;
-  position: relative;
   background-image: url(../images/sunjacket-cover.jpg);
   background-size: cover;
   background-position: 50% 50%;
   background-color: $coal;
+}
+.welcome-container {
+  @extend %flex;
+  position: relative;
 }
 .welcome-banner {
   text-align: center;
