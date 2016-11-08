@@ -135,10 +135,10 @@ img {
       background-color: $white;
     }
   }
-  &.btn-rsvp {
-    margin-left: 1.25em;
+  &.btn-buy-tickets {
+    margin-right: 1.25em;
     @media #{$phone} {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
