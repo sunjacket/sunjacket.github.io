@@ -502,6 +502,7 @@ a.close-x {
   padding-bottom: 1.1em;
   @media #{$phone} {
     font-size: 24px;
+    padding-bottom: 0.5em;
   }
   &:last-of-type {
     padding-bottom: 0;
@@ -512,6 +513,11 @@ a.close-x {
     margin-top: 0.6em;
     @media #{$phone} {
       font-size: 18px;
+    }
+  }
+  .btn:first-of-type {
+    @media #{$phone} {
+      margin-top: 0.75em;
     }
   }
 }
