@@ -530,6 +530,10 @@ a.close-x {
     border-color: $white;
     background-color: $white;
     transition: all 250ms ease;
+    @media #{$phone} {
+      padding: 16px 0 !important;
+      font-size: 12px !important;
+    }
     &:hover {
       color: $white;
       background-color: $plum;
