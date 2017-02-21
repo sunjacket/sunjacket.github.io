@@ -121,7 +121,7 @@ img {
   }
   /* ticket/rsvp buttons */
   &.btn-buy-tickets,
-  &.btn-rsvp  {
+  &.btn-rsvp {
     color: $white;
     border-color: lighten($plum,40%);
     background-color: $plum;
@@ -495,36 +495,45 @@ a.close-x {
 
 /* .shows */
 
-.show {
-  font-size: 48px;
-  line-height: 1.10416667;
-  text-transform: uppercase;
-  padding-bottom: 1.1em;
-  @media #{$phone} {
-    font-size: 24px;
-    padding-bottom: 0.5em;
-  }
-  &:last-of-type {
-    padding-bottom: 0;
-  }
-  .show-bands {
-    font-size: 24px;
-    text-transform: none;
-    margin-top: 0.6em;
-    @media #{$phone} {
-      font-size: 18px;
-    }
-  }
-  .btn:first-of-type {
-    @media #{$phone} {
-      margin-top: 0.75em;
-    }
-  }
+.bit-nav-bar-container {
+  display: none;
 }
-.show-details {
-  padding-bottom: 0.25em;
-  @media #{$phone} {
-    padding-bottom: 0.75em;
+.bit-widget {
+  padding: 0 !important;
+  .bit-upcoming-events, .bit-past-events {
+    margin: 0 !important;
+    border-bottom: 1px solid transparentize($white,0.95) !important;
+  }
+  .bit-event {
+    padding: 1em 0 !important;
+    border-top: 1px solid transparentize($white,0.95) !important;
+    transition: color 250ms ease;
+    &:hover {
+      color: transparentize($white,0.25);
+      background-color: transparent !important;
+    }
+  }
+  .bit-date {
+    font-weight: normal !important;
+    text-transform: uppercase;
+  }
+  .bit-offers {
+    font-weight: normal !important;
+    margin: 0 !important;
+  }
+  .bit-button {
+    font-size: 16px !important;
+    padding: 17px 0 !important;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: $white;
+    background-color: $white;
+    transition: all 250ms ease;
+    &:hover {
+      color: $white;
+      background-color: $plum;
+    }
   }
 }
 
