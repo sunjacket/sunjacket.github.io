@@ -508,7 +508,34 @@ a.close-x {
 
 /* .shows */
 
-.bit-nav-bar-container {
+  /* resets */
+
+.bit-widget .bit-event .bit-event-buttons {
+  margin: 0 !important;
+}
+.bit-widget .bit-event .bit-button {
+  line-height: inherit !important;
+}
+.bit-widget.bit-layout-desktop {
+  .bit-date, .bit-venue, .bit-location {
+    margin: 0 !important;
+    text-align: left !important;
+  }
+}
+.bit-widget.bit-layout-desktop {
+  .bit-date {
+    width: 20%;
+  }
+}
+.bit-widget.bit-layout-desktop {
+  .bit-venue, .bit-location {
+    width: 40%;
+  }
+}
+
+  /* styles */
+
+.bit-nav-bar-container,.bit-track-button-container {
   display: none;
 }
 .bit-widget {
@@ -527,6 +554,7 @@ a.close-x {
     }
   }
   .bit-date {
+    margin: 0 !important;
     font-weight: normal !important;
     text-transform: uppercase;
   }
