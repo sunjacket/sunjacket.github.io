@@ -588,3 +588,24 @@ a.close-x {
   position: relative;
   z-index: 1000;
 }
+
+/* .instagram */
+
+body.insta-links {
+  .header {
+    position: static;
+  }
+  .copyright {
+    @extend %day;
+  }
+}
+.instagram {
+  @extend %day;
+  padding-top: 58px;
+  @media #{$phone} {
+    padding-top: 20px;
+  }
+}
+.insta-post {
+  margin-bottom: $gutter;
+}
