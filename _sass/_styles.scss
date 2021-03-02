@@ -1,16 +1,15 @@
 /* Colors & Schemes ------------------- */
 
-$plum: rgb(120,107,111);
-$coal: rgb(45,45,50);
+$black: rgb(0,0,0);
 $white: rgb(255,255,255);
 
 %day {
-  color: $plum;
+  color: $black;
   background-color: $white;
 }
 %night {
   color: $white;
-  background-color: $plum;
+  background-color: $black;
 }
 
 /* Layout ----------------------------- */
@@ -33,12 +32,17 @@ $white: rgb(255,255,255);
     padding-bottom: 20px;
   }
 }
-.content,
-.promotion {
+.content {
   padding-top: 58px;
   padding-bottom: 58px;
   @media #{$phone} {
     padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.promotion {
+  padding-bottom: 58px;
+  @media #{$phone} {
     padding-bottom: 20px;
   }
 }
@@ -87,35 +91,35 @@ img {
   }
   /* welcome button */
   &.btn-welcome {
-    color: $plum;
+    color: $black;
     border-color: $white;
     background-color: $white;
     &:hover {
       color: $white;
-      border-color: $coal;
-      background-color: $coal;
+      border-color: $black;
+      background-color: $black;
     }
   }
   /* submit button */
   &.btn-submit {
     width: 100%;
-    color: $coal;
+    color: $black;
     border-color: $white;
     background-color: $white;
     -webkit-appearance: none;
     &:hover {
       color: $white;
-      background-color: $coal;
+      background-color: $black;
     }
   }
   /* pre-order button */
   &.btn-pre-order {
     color: $white;
-    border-color: $plum;
-    background-color: $plum;
+    border-color: $black;
+    background-color: $black;
     &:hover {
-      color: $plum;
-      border-color: $plum;
+      color: $black;
+      border-color: $black;
       background-color: $white;
     }
   }
@@ -123,14 +127,14 @@ img {
   &.btn-buy-tickets,
   &.btn-rsvp {
     color: $white;
-    border-color: lighten($plum,40%);
-    background-color: $plum;
+    border-color: lighten($black,40%);
+    background-color: $black;
     @media #{$phone} {
       margin-bottom: 0.75em;
       margin-bottom: 0.75em;
     }
     &:hover {
-      color: $plum;
+      color: $black;
       border-color: $white;
       background-color: $white;
     }
@@ -192,13 +196,13 @@ img {
 %header-links {
   a {
     display: inline-block;
-    color: $plum;
+    color: $white;
     transition: color 125ms ease;
     padding: 18px;
     margin-top: -18px;
     margin-bottom: -18px;
     &:hover {
-      color: $coal;
+      color: $white;
     }
   }
 }
@@ -258,6 +262,9 @@ a.menu-link {
 .copyright {
   @extend %night;
 }
+.copyright-line {
+  display: block;
+}
 
 /* Flyout Menus ----------------------- */
 
@@ -270,7 +277,7 @@ a.menu-link {
   left: 0;
   overflow-y: scroll;
   z-index: -100;
-  background-color: $coal;
+  background-color: $black;
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms ease;
@@ -312,7 +319,7 @@ input[type="email"] {
   width: 100%;
   border: none;
   border: 1px solid $white;
-  background-color: $coal;
+  background-color: $black;
   border-radius: 1px;
   margin-top: 1em;
   margin-bottom: 1.125em;
@@ -359,7 +366,7 @@ a.close-x {
   background-image: url(../images/sunjacket-cover.jpg);
   background-size: cover;
   background-position: 50% 50%;
-  background-color: $coal;
+  background-color: $black;
 }
 .welcome-container {
   @extend %flex;
@@ -424,12 +431,11 @@ a.close-x {
 .pre-order {
   @extend %day;
   a {
-    color: $plum;
+    color: $black;
   }
 }
 .pre-order-images {
   position: relative;
-  margin-top: 3.5em;
   margin-bottom: 3.5em;
   line-height: 0;
   border-radius: 1px;
@@ -577,7 +583,7 @@ a.close-x {
     }
     &:hover {
       color: $white;
-      background-color: $plum;
+      background-color: $black;
     }
   }
 }
