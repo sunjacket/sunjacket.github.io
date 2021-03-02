@@ -83,7 +83,7 @@ img {
   padding: 17px 30px;
   border-width: 1px;
   border-style: solid;
-  border-radius: 1px;
+  border-radius: 2px;
   transition: all 125ms ease;
   @media #{$phone} {
     padding: 16px 30px;
@@ -269,6 +269,11 @@ a.menu-link {
 /* footer */
 
 .copyright {
+  .container {
+    padding-top: 0;
+  }
+}
+.copyright {
   @extend %night;
 }
 
@@ -385,11 +390,13 @@ a.close-x {
     font-size: 140px;
     color: $white;
     line-height: 0.8;
+    margin-bottom: 0.2em;
   }
 }
 .welcome-message {
   @extend .intro;
   color: $white;
+  margin-bottom: 1.25em;
 }
 .welcome-arrow {
   display: block;

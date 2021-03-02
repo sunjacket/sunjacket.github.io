@@ -28,7 +28,7 @@ em {
   font-family: 'BASE&BLOOM';
   font-size: 120px;
   line-height: 1;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.25em;
   @media #{$phone} {
     font-size: 36px;
   }
@@ -51,8 +51,8 @@ em {
   }
 }
 .item-title {
-  font-size: 36px;
-  margin-bottom: 0.6em;
+  font-size: 24px;
+  margin-bottom: 0.75em;
   line-height: 1.1;
   @media #{$phone} {
     font-size: 24px;
@@ -72,7 +72,7 @@ em {
 .intro {
   font-size: 32px;
   line-height: 1.2;
-  margin-bottom: 0.7em;
+  margin-bottom: 1.5em;
   @media #{$phone} {
     font-size: 24px;
   }
