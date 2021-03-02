@@ -5,7 +5,6 @@ body {
   font-size: 18px;
   line-height: 1.277777;
   font-weight: normal;
-  letter-spacing: 0.04em;
   text-rendering: geometricPrecision;
   @media #{$phone} {
     font-size: 16px;
@@ -29,7 +28,6 @@ em {
   font-family: 'BASE&BLOOM';
   font-size: 120px;
   line-height: 1;
-  text-transform: uppercase;
   margin-bottom: 0.7em;
   @media #{$phone} {
     font-size: 36px;
