@@ -1,4 +1,4 @@
-/* Regular-Regular */
+/* PX Grotesk Regular-Regular */
 
 @font-face {
     font-family: 'PxGroteskRegular';
@@ -10,7 +10,7 @@
     font-weight: normal;
 }
 
-/* Regular-Italic */
+/* PX Grotesk Regular-Italic */
 
 @font-face {
     font-family: 'PxGroteskRegular';
@@ -20,4 +20,12 @@
        url('../fonts/PxGroteskRegular-Italic.svg#PxGroteskRegular') format('svg'); /* Legacy iOS */
     font-style: italic;
     font-weight: normal;
+}
+
+/* BASE&BLOOM */
+
+@font-face {
+    font-family: 'BASE&BLOOM';
+    src: url('../fonts/BASE&BLOOM.woff2') format('woff2'),
+      url('../fonts/BASE&BLOOM.woff2') format('woff');
 }
