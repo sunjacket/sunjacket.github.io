@@ -16,10 +16,6 @@ em {
 }
 
 /* Titles */
-.welcome-banner h1 {
-  font-family: 'BASE&BLOOM';
-  font-size: 140px;
-}
 .menu-title {
   font-size: 24px;
   line-height: 1;
@@ -30,7 +26,8 @@ em {
   }
 }
 .section-title {
-  font-size: 72px;
+  font-family: 'BASE&BLOOM';
+  font-size: 120px;
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 0.7em;
@@ -75,8 +72,8 @@ em {
 /* Paragraphs */
 
 .intro {
-  font-size: 48px;
-  line-height: 1.25;
+  font-size: 32px;
+  line-height: 1.2;
   margin-bottom: 0.7em;
   @media #{$phone} {
     font-size: 24px;

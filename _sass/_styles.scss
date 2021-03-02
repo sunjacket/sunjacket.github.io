@@ -164,19 +164,25 @@ img {
 .soft-return {
   display: block;
 }
+.uc {
+  text-transform: uppercase;
+}
+.lc {
+  text-transform: lowercase;
+}
 %flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: flex-end;
+          align-items: flex-end;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: flex-start;
+          justify-content: flex-start;
 }
 .video-wrap {
   position: relative;
@@ -373,11 +379,12 @@ a.close-x {
   position: relative;
 }
 .welcome-banner {
-  text-align: center;
+  text-align: left;
   h1 {
     font-family: 'BASE&BLOOM';
     font-size: 140px;
     color: $white;
+    line-height: 0.8;
   }
 }
 .welcome-message {
