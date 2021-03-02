@@ -374,10 +374,15 @@ a.close-x {
 }
 .welcome-banner {
   text-align: center;
+  h1 {
+    font-family: 'BASE&BLOOM';
+    font-size: 140px;
+    color: $white;
+  }
 }
 .welcome-message {
   @extend .intro;
-  color: white;
+  color: $white;
 }
 .welcome-arrow {
   display: block;
