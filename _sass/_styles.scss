@@ -161,6 +161,9 @@ img {
     display: inline;
   }
 }
+.soft-return {
+  display: block;
+}
 %flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -261,9 +264,6 @@ a.menu-link {
 
 .copyright {
   @extend %night;
-}
-.copyright-line {
-  display: block;
 }
 
 /* Flyout Menus ----------------------- */
