@@ -17,8 +17,8 @@ $white: rgb(255,255,255);
 .container,
 .container-flush {
   position: relative;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 100px;
+  padding-bottom: 110px;
   &.container-menu {
     padding-top: 72px;
     padding-bottom: 72px;
@@ -28,18 +28,18 @@ $white: rgb(255,255,255);
     }
   }
   @media #{$phone} {
-    padding-top: 20px;
-    padding-bottom: 20px;
+/*  padding-top: 20px;*/
+/*  padding-bottom: 20px;*/
   }
 }
-.content {
+/*.content {
   padding-top: 58px;
   padding-bottom: 58px;
   @media #{$phone} {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-}
+}*/
 .promotion {
   padding-bottom: 58px;
   @media #{$phone} {
@@ -448,7 +448,6 @@ a.close-x {
 }
 .pre-order-images {
   position: relative;
-  margin-bottom: 3.5em;
   line-height: 0;
   border-radius: 1px;
   @media #{$phone} {
