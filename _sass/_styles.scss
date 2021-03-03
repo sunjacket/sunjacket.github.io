@@ -566,10 +566,17 @@ a.close-x {
     color: $white;
   }
 }
-a.icon-bandcamp {
-  background-image: url(../images/icon-bandcamp.svg);
-  background-repeat: no-repeat;
-  padding-left: 18px;
+.icon-apple,
+.icon-bandcamp,
+.icon-spotify {
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+  position: relative;
+  top: 3px;
+}
+.icon-apple {
+  top: 4px;
 }
 
 /* .shows */
