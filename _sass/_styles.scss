@@ -197,6 +197,12 @@ img {
   width: 100%;
   height: 100%;
 }
+.flush-top {
+  padding-top: 0;
+}
+.flush-bottom {
+  padding-bottom: 0;
+}
 
 /* Header & Footer -------------------- */
 
@@ -374,7 +380,7 @@ a.close-x {
 /* .welcome */
 
 .welcome {
-  background-image: url(../images/sunjacket-cover.jpg);
+  background-image: url(../images/sunjacket-more-lifelike-cover.jpg);
   background-size: cover;
   background-position: 50% 50%;
   background-color: $black;
@@ -522,12 +528,48 @@ a.close-x {
 }
 
 /* .music */
-
-.soundcloud {
-  padding-bottom: 1.4em;
-  &:last-of-type {
-    padding-bottom: 0;
+.album-cover {
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+.album-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  small {
+    font-size: 18px;
+    margin-left: 24px;
   }
+}
+.album-links,
+.album-tracklist {
+  margin-bottom: 18px;
+}
+.album-tracklist {
+  counter-reset: tracklist;
+  list-style-type: none;
+  list-style-position: inside;
+  .album-track {
+    margin-bottom: 1em;
+    counter-increment: tracklist;
+    &::before {
+      content: counter(tracklist);
+      display: inline-block;
+      width: 40px;
+    }
+  }
+}
+.album-link {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  a {
+    color: $white;
+  }
+}
+a.icon-bandcamp {
+  background-image: url(../images/icon-bandcamp.svg);
+  background-repeat: no-repeat;
+  padding-left: 18px;
 }
 
 /* .shows */

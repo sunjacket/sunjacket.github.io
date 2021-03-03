@@ -6,6 +6,7 @@ body {
   line-height: 1.277777;
   font-weight: normal;
   text-rendering: geometricPrecision;
+  font-feature-settings: "kern" 1,"liga" 1, "calt" 1;
   @media #{$phone} {
     font-size: 16px;
   }

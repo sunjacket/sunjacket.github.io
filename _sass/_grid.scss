@@ -47,6 +47,9 @@ $phone: "screen and (max-width: 480px)";
   float: left;
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
+  &.reverse {
+    float: right;
+  }
 }
 .col-2 {
   width: 50%;
