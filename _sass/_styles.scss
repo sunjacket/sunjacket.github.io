@@ -14,11 +14,14 @@ $white: rgb(255,255,255);
 
 /* Layout ----------------------------- */
 
+$padding-top: 100px;
+$padding-bottom: 110px;
+
 .container,
 .container-flush {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 110px;
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
   &.container-menu {
     padding-top: 72px;
     padding-bottom: 72px;
@@ -28,8 +31,8 @@ $white: rgb(255,255,255);
     }
   }
   @media #{$phone} {
-/*  padding-top: 20px;*/
-/*  padding-bottom: 20px;*/
+    padding-top: $padding-top / 5;
+    padding-bottom: $padding-bottom / 5;
   }
 }
 /*.content {
@@ -197,11 +200,17 @@ img {
   width: 100%;
   height: 100%;
 }
-.flush-top {
+.flush-pad-top {
   padding-top: 0;
 }
-.flush-bottom {
+.flush-pad-bottom {
   padding-bottom: 0;
+}
+.half-pad-top {
+  padding-top: $padding-top / 2;
+}
+.half-pad-bottom {
+  padding-bottom: $padding-bottom / 2;
 }
 
 /* Header & Footer -------------------- */
