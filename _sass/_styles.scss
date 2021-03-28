@@ -319,8 +319,11 @@ a.menu-link {
 }
 .contact {
   p a {
-    font-size: 24px;
+    font-size: 36px;
   }
+}
+.contact-item {
+  padding-bottom: 4em;
 }
 .follow {
   ul a {
@@ -402,7 +405,7 @@ a.close-x {
   text-align: left;
   h1 {
     font-family: 'BASE&BLOOM';
-    font-size: 140px;
+    font-size: 10.5vw;
     color: $white;
     line-height: 0.8;
     margin-bottom: 0.2em;
