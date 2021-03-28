@@ -333,6 +333,10 @@ a.menu-link {
     font-size: 18px;
   }
 }
+.contact p,
+.follow li {
+  margin-bottom: 0.25em;
+}
 .open {
   opacity: 1;
   pointer-events: auto;
