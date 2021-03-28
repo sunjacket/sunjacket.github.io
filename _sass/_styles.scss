@@ -31,8 +31,8 @@ $padding-bottom: 110px;
     }
   }
   @media #{$phone} {
-    padding-top: $padding-top / 5;
-    padding-bottom: $padding-bottom / 5;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 }
 /*.content {
@@ -174,18 +174,7 @@ img {
   text-transform: lowercase;
 }
 %flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: flex-end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: flex-start;
-          justify-content: flex-start;
 }
 .video-wrap {
   position: relative;
@@ -270,7 +259,9 @@ a.menu-link {
   }
 }
 .nav-mobile {
-  @extend %flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   li {
     padding-top: 12px;
@@ -324,6 +315,12 @@ a.menu-link {
 }
 .contact-item {
   padding-bottom: 4em;
+  @media #{$phone} {
+    padding-bottom: 2em;
+  }
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 }
 .follow {
   ul a {
@@ -398,17 +395,27 @@ a.close-x {
   background-color: $black;
 }
 .welcome-container {
-  @extend %flex;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
   position: relative;
+  margin: 0;
+  max-width: 100%;
+  @media #{$tablet} {
+    align-items: center;
+  }
 }
 .welcome-banner {
-  text-align: left;
+  width: 100%;
   h1 {
     font-family: 'BASE&BLOOM';
     font-size: 10.5vw;
     color: $white;
     line-height: 0.8;
     margin-bottom: 0.2em;
+    @media #{$phone} {
+      font-size: 21vw;
+    }
   }
 }
 .welcome-message {
@@ -476,7 +483,6 @@ a.close-x {
   line-height: 0;
   border-radius: 1px;
   @media #{$phone} {
-    margin-top: 2.2em;
     margin-bottom: 2.2em;
   }
   .slider-next,
@@ -508,7 +514,12 @@ a.close-x {
 }
 .pre-order-item {
   @media #{$tablet} {
-    padding-bottom: 2.25em;
+    padding-bottom: 3em;
+  }
+  &:last-of-type {
+    @media #{$phone} {
+      padding-bottom: 0;
+    }
   }
 }
 .pre-order-item-list {
@@ -569,6 +580,9 @@ a.close-x {
       display: inline-block;
       width: 40px;
     }
+  }
+  @media #{$phone} {
+    display: none;
   }
 }
 .album-link {
