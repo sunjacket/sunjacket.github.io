@@ -1,7 +1,7 @@
 title: Sunjacket
 email: hello@sunjacket.net
 description: > # this means to ignore newlines until "baseurl:"
-  Official website for Sunjacket, the four-piece band from Chicago.
+  Official website for Sunjacket, the three-piece band from Chicago.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.sunjacket.net" # the base hostname & protocol for your site
 permalink: pretty
