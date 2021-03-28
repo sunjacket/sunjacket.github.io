@@ -376,7 +376,7 @@ a.close-x {
   transition: opacity 125ms ease;
   line-height: 0;
   @media #{$phone} {
-    top: 36px;
+    top: 39px;
     right: $row-padding-phone;
   }
   &:hover {
