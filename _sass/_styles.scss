@@ -698,6 +698,9 @@ body.insta-links {
   .header {
     position: static;
   }
+  .nav-desktop a {
+    color: $black;
+  }
   .logo a {
     color: $black;
   }
@@ -717,6 +720,9 @@ body.insta-links {
   @media #{$phone} {
     padding-top: 20px;
   }
+}
+.ig-pre-order {
+  padding-bottom: 30px;
 }
 .insta-post {
   margin-bottom: $gutter;
