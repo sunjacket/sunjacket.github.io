@@ -697,12 +697,15 @@ a.close-x {
 body.insta-links {
   .header {
     position: static;
-    a {
-      color: $black;
-    }
-    g {
+  }
+  .logo a {
+    color: $black;
+  }
+  .menu-link g {
       fill: $black;
-    }
+  }
+  .menu ul a {
+    color: $white;
   }
   .copyright {
     @extend %day;
