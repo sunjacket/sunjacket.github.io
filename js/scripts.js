@@ -63,14 +63,14 @@ $(document).ready(function(event){
     e.preventDefault();
     $('.slider').slick('slickPrev');
   });
-
+/*
   $('#watchLinkButton').click(function(e){
-    e.preventDefault();
+    e.stopPropagation();
     fbq('trackCustom', 'WatchLinkButtonClick');
   });
   $('#watchLinkThumb').click(function(e){
-    e.preventDefault();
+    e.stopPropagation();
     fbq('trackCustom', 'WatchLinkThumbClick');
-  });
+  });*/
 
 });
