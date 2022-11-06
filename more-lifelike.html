@@ -42,6 +42,14 @@ published: true
       </ul>
     </section>
 
+    <button id="addToCartButton">Purchase</button>
+    <script type="text/javascript">
+      $('#addToCartButton').click(function() {
+        fbq('trackCustom', 'CustomPurchase');
+        window.location.href("https://youtu.be/5CvIISVFEa0");
+      });
+    </script>
+
 
   </div>
 </main>
