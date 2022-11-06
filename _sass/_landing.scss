@@ -45,7 +45,8 @@ body.landing {
   max-width: 480px;
 }
 .land-img {
-  figure {
+  line-height: 0;
+  figure, video {
     line-height: 0;
   }
 }
