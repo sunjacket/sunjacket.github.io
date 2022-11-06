@@ -14,7 +14,7 @@ published: true
 
   <div class="land-wrap">
     <section class="land-img">
-      <a href="https://youtu.be/5CvIISVFEa0">
+      <a id="watchLinkPreview" href="https://youtu.be/5CvIISVFEa0">
         <video style="width: 100%" playsinline autoplay muted loop>
           <source src="{{ site.baseurl }}/images/more-lifelike-web.mp4" type="video/mp4">
         </video>
@@ -52,6 +52,9 @@ published: true
 
 <script type="text/javascript">
   $('#watchLinkButton').click(function() {
+    fbq('track', 'ViewContent');
+  });
+  $('#watchLinkPreview').click(function() {
     fbq('track', 'ViewContent');
   });
 </script>
