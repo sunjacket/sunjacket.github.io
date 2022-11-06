@@ -64,12 +64,10 @@ $(document).ready(function(event){
     $('.slider').slick('slickPrev');
   });
 
-  $('#watchLinkButton').click(function(e){
-    e.preventDefault();
+  $('#watchLinkButton').click(function(){
     fbq('trackCustom', 'WatchLinkButtonClick');
   });
-  $('#watchLinkThumb').click(function(e){
-    e.preventDefault();
+  $('#watchLinkThumb').click(function(){
     fbq('trackCustom', 'WatchLinkThumbClick');
   });
 
