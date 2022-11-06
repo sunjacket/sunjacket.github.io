@@ -64,4 +64,13 @@ $(document).ready(function(event){
     $('.slider').slick('slickPrev');
   });
 
+  $('#watchLinkButton').click(function(e){
+    e.preventDefault();
+    fbq('trackCustom', 'WatchLinkButtonClick');
+  });
+  $('#watchLinkThumb').click(function(e){
+    e.preventDefault();
+    fbq('trackCustom', 'WatchLinkThumbClick');
+  });
+
 });
