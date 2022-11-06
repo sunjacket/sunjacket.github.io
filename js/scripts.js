@@ -64,13 +64,13 @@ $(document).ready(function(event){
     $('.slider').slick('slickPrev');
   });
 
-  /*$('#watchLinkButton').click(function(e){
+  $('#watchLinkButton').click(function(e){
     e.preventDefault();
-    fbq('trackCustom', 'WatchLinkButtonClick');
+    fbq('trackCustom', 'MoreLifelikeWatchClick');
   });
   $('#watchLinkThumb').click(function(e){
     e.preventDefault();
-    fbq('trackCustom', 'WatchLinkThumbClick');
+    fbq('trackCustom', 'MoreLifelikeThumbClick');
   });
-*/
+
 });
