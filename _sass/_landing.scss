@@ -63,6 +63,15 @@ body.landing {
     font-size: 16px;
   }
 }
+.land-link-tile {
+  background-color: hsl(0, 0, 100%);
+  transition: all 125ms ease;
+  &:hover {
+    @media #{$phone-above} {
+      background-color: hsl(0, 0, 94%);
+    }
+  }
+}
 .land-link {
   display: flex;
   align-items: center;
@@ -75,6 +84,7 @@ body.landing {
   width: auto;
 }
 .land-link-btn {
+  background-color: $white;
   border-color: $black;
   border-width: 1px;
   border-style: solid;
@@ -91,4 +101,10 @@ body.landing {
   cursor: pointer;
   padding: 12px 24px;
   transition: all 125ms ease;
+  &:hover {
+    @media #{$phone-above} {
+      background-color: $black;
+      color: $white;
+    }
+  }
 }
