@@ -63,14 +63,14 @@ $(document).ready(function(event){
     e.preventDefault();
     $('.slider').slick('slickPrev');
   });
-/*
-  $('#watchLinkButton').click(function(e){
-    e.stopPropagation();
+
+  /*$('#watchLinkButton').click(function(e){
+    e.preventDefault();
     fbq('trackCustom', 'WatchLinkButtonClick');
   });
   $('#watchLinkThumb').click(function(e){
-    e.stopPropagation();
+    e.preventDefault();
     fbq('trackCustom', 'WatchLinkThumbClick');
-  });*/
-
+  });
+*/
 });
