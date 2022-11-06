@@ -32,7 +32,7 @@ published: true
         <!-- service link -->
         <li class="service">
           <div class="land-link-tile">
-            <a class="land-link" href="https://youtu.be/5CvIISVFEa0">
+            <a id="watchLinkButton" class="land-link" href="https://youtu.be/5CvIISVFEa0">
               <img class="land-service-logo" src="{{ site.baseurl }}/images/icon-youtube.png">
               <div class="land-link-btn">Watch</div>
             </a>
@@ -42,9 +42,16 @@ published: true
       </ul>
     </section>
 
+
   </div>
 </main>
 
 <footer class="land-footer">
   <p>&copy; {{ 'now' | date: '%Y' }} Sunjacket</p>
 </footer>
+
+<script type="text/javascript">
+  $('#watchLinkButton').click(function() {
+    fbq('track', 'ViewContent');
+  });
+</script>
