@@ -32,7 +32,7 @@ published: true
         <!-- service link -->
         <li class="service">
           <div class="land-link-tile">
-            <button class="land-link" onclick="fbq('trackCustom', 'MoreLifelikeButtonClick'), window.location.href='https://youtu.be/5CvIISVFEa0'">
+            <button class="land-link" onclick="testFunction()">
               <img class="land-service-logo" src="{{ site.baseurl }}/images/icon-youtube.png">
               <div class="land-link-btn">Watch</div>
             </button>
@@ -41,6 +41,12 @@ published: true
         <!-- /service link -->
       </ul>
     </section>
+    <script>
+      function testFunction() {
+        fbq('trackCustom', 'MoreLifelikeButtonClick'),
+        window.location.href='https://youtu.be/5CvIISVFEa0';
+      }
+    </script>
 
 
   </div>
