@@ -36,20 +36,17 @@ published: true
               <img class="land-service-logo" src="{{ site.baseurl }}/images/icon-youtube.png">
               <div class="land-link-btn">Watch</div>
             </a>
+            <script>
+              var link = document.querySelector("#watchLinkButton");
+              link.addEventListener("click", function (event) {
+                fbq('trackCustom', 'MoreLifelikeWatchClick');
+              });
+            </script>
           </div>
         </li>
         <!-- /service link -->
       </ul>
     </section>
-
-    <button id="addToCartButton">Purchase</button>
-    <script type="text/javascript">
-      $('#addToCartButton').click(function() {
-        fbq('trackCustom', 'CustomPurchase');
-        window.location.href("https://youtu.be/5CvIISVFEa0");
-      });
-    </script>
-
 
   </div>
 </main>
