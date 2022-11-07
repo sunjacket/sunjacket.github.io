@@ -19,9 +19,20 @@ published: true
           <source src="{{ site.baseurl }}/images/more-lifelike-web.mp4" type="video/mp4">
         </video>
       </a>
-      <!-- <figure>
-        <img src="../images/instagram/sunjacket-2022-10-19.jpg">
-      </figure> -->
+      <script>
+        document
+          .querySelector("#watchLinkThumb")
+          .addEventListener("click", function (event) {
+            event.preventDefault();
+            fbq('trackCustom', 'MoreLifelikeVideoClick', {
+              service: 'YouTube',
+              source: 'thumbnail'
+            });
+            setTimeout(function () {
+              window.location = "https://youtu.be/5CvIISVFEa0";
+            }, 500);
+        });
+      </script>
     </section>
     <section class="land-header">
         <h1 class="land-title">More Lifelike (Official Video)</h1>
@@ -32,14 +43,22 @@ published: true
         <!-- service link -->
         <li class="service">
           <div class="land-link-tile">
-            <a id="watchLinkButton" class="land-link" href="https://youtu.be/5CvIISVFEa0" target="_blank">
+            <a id="watchLinkButton" class="land-link" href="https://youtu.be/5CvIISVFEa0">
               <img class="land-service-logo" src="{{ site.baseurl }}/images/icon-youtube.png">
               <div class="land-link-btn">Watch</div>
             </a>
             <script>
-              var link = document.querySelector("#watchLinkButton");
-              link.addEventListener("click", function (event) {
-                fbq('trackCustom', 'MoreLifelikeWatchClick');
+              document
+                .querySelector("#watchLinkButton")
+                .addEventListener("click", function (event) {
+                  event.preventDefault();
+                  fbq('trackCustom', 'MoreLifelikeVideoClick', {
+                    service: 'YouTube',
+                    source: 'button'
+                  });
+                  setTimeout(function () {
+                    window.location = "https://youtu.be/5CvIISVFEa0";
+                  }, 500);
               });
             </script>
           </div>
