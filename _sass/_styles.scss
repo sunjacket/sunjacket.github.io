@@ -180,7 +180,11 @@ img {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
+  margin-bottom: 5vw;
   height: 0;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 .video-wrap iframe {
   position: absolute;
