@@ -116,7 +116,7 @@ img {
     }
   }
   /* pre-order button */
-  &.btn-pre-order {
+  &.btn-pre-order, &.btn-ig {
     color: $white;
     border-color: $black;
     background-color: $black;
@@ -126,6 +126,10 @@ img {
       background-color: $white;
     }
   }
+  &.btn-ig {
+    margin-bottom: 30px;
+  }
+
   /* ticket/rsvp buttons */
   &.btn-buy-tickets,
   &.btn-rsvp {
